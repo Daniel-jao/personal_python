@@ -1,0 +1,18 @@
+name = "jao"
+name2 = name
+print("my name is ", name,name2)
+
+name = "paoche ge "
+print(name,name2)
+
+PIE = "3.14"
+
+name = "jao"
+print("who is the name ",name)
+
+#!/usr/bin/env python
+
+
+msg =  ''' ****内容 '''
+#//表示注释
+print(msg)
