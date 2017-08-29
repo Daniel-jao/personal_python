@@ -1,0 +1,14 @@
+#Author :jao
+import getpass
+_username = 'jao'
+_password = 'admin123'
+username = input("username：")
+password = input("password：")
+
+if _username == username and _password == password:
+    print("Welocome user {name} login...".format(name=username))
+else:
+    print("Invalid username or password!")
+ print('admin')
+#打印用户名和密码
+#判断输入的用户和密码是否正确
