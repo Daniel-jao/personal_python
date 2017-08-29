@@ -1,0 +1,22 @@
+#Author :jao
+age_of_someone = 25
+
+count = 0
+while True:  #while count <3:
+    if count == 3:
+        break
+    guess_age = int(input("guess age:"))
+    if guess_age == age_of_someone:
+        print("yes,you got it")
+        break
+    elif guess_age > age_of_someone:
+        print("think smaller...")
+    else:
+        print("think bigger!")
+    count += 1
+else:
+#if count == 3:
+    print(" you  have tried too many times...fuck off")
+
+for i in range(0,10,4):  #4 0-10个数字 4 指的是步长
+    print("loop",i)
