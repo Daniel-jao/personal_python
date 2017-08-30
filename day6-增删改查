@@ -30,3 +30,40 @@ names2 = [1,2,3,4]
 names.extend(names2)  #将names2 合并到names
 del names2
 print(names,names2)
+
+
+import copy
+names = ["jao","nian","li",["小明","小李"],"1234","liming","lilei"]
+name2 = copy.copy(names)
+
+print(names)
+print(name2)
+names[1] = "xiaohui"
+names[3][0] = "xiaohui"
+print(names)
+print(name2)'''
+
+
+names = ["jao","nian","li",["小明","小李"],"1234","liming","lilei"]
+print(names[0:-1:2])
+range(1,10,2)
+
+for i in names:
+    print(i)
+
+import copy
+
+person=['name',['saving',100]]
+p1=copy.copy(person)
+p2=person[:]
+p3=list(person)
+print(p1)
+print(p2)
+print(p3)
+p1=person[:]
+p2=person[:]
+
+p1[0]='jao'
+p2[0]='admin'
+p1[1][1]=10
+print(p1)
