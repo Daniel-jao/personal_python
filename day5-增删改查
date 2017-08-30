@@ -1,0 +1,32 @@
+#Author :jao
+#names = "jao nian dingtao"
+names = ["jao","nian","dingtao","1234"]
+names.append("jaonian")  #将此人加入数组，默认在最后位置 增加
+names.insert(1,"test")  #将此人插入固定位置
+names.insert(2,"admin") #插入固定位置
+names[2] ="liming"   #替换某人 改
+
+#delete 删除某人
+names.remove("jao")
+del names[2]
+names.pop()   #默认删除最后一个
+
+print(names)
+print(names[0],names[1],names[2])
+print(names[1:2])
+print(names[1:3]) #切片数据
+print(names[2])
+print(names[-2:])
+
+print(names.index("1234")) #查找某人
+
+print(names.count("jao")) #查找总共有多人相同的人 查找同名的人
+
+names.clear()
+names.reverse() #倒序
+names.sort()  #排序
+print(names)
+names2 = [1,2,3,4]
+names.extend(names2)  #将names2 合并到names
+del names2
+print(names,names2)
