@@ -1,0 +1,33 @@
+#Author :jao
+name = "my\t name is {name} and  age is {year}"
+print(name.capitalize())   #首字母大写
+print(name.count("a"))      #查询列表中的a的数目
+print(name.center(50,"-"))   #打印50字符，将不够的用name 补全
+print(name.endswith("ao"))   #以ao结尾
+print(name.expandtabs(tabsize=30))   #将\t 转为多少空格
+print(name[name.find("name"):])     #将字符所取的字符取出
+print(name.format(name="jao",year=25))
+#print(name.format_map( {'name':'jao','year':25)}  ))
+print("abc123".isalpha())   #存英文字符
+print('1A'.isdigit()) #是否为整数
+print("d1A".isidentifier())   #判断是不是一个合法的变量名
+print("12Ad".islower())  #是否为小写
+print("23wewqe".isnumeric())   #只有数字的时候
+print("It is is33".istitle())
+print("my name  is ".isprintable())
+print("muah".join("="))
+print('+ '.join(["'1','2','3','4'"]))
+print(name.ljust(50,"*"))
+print(name.rjust(50,"*"))
+print("NKJASDKDJ".lower())
+print("jkdsjfk".upper())
+print("NKJASDKDJ\n".lstrip())
+print("======")
+p = str.maketrans("abcdef",'123456')
+print("admin".translate(p))
+print("admina".replace('a','A',1))   #替换a --> A
+print("1+2+3+4".split("+")) #提取信息
+print("NKJASDKDJ".swapcase()) #大写换小写
+print("my name is ".title())
+print("NKJASDKDJ".zfill(50))
+
