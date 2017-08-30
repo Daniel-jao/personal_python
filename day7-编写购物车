@@ -1,0 +1,44 @@
+#Author :jao
+购物车程序
+1：启动程序后，让用户输入工资，然后打印商品列表
+2:允许用户根据商品编号购买商品
+3：用户选择商品后，检查余额是否够，允许直接扣款，不够就提醒无法购买
+4：可随时退出，打印已购买的商品'''
+
+product_list = [
+    ('iphone',5800),
+    ('mac',12900),
+    ('Bike',800),
+    ('Coffee',31),
+    ('Watch',12000),
+]
+shoplist =[]
+salary = input("输入你的工资：")
+if salary.isdigit():
+    salary = int(salary)
+    while True:
+        for index,item in enumerate(product_list):   #打印商品列表，打印下标
+            #print(product_list.index(item),item)  #打印下标
+            print(index,item)
+        user_choice = input("选择要买的商品：")
+        if user_choice.isdigit():
+            user_choice = int(user_choice)
+            if user_choice < len(product_list) and user_choice >=0:
+                p_item = product_list[user_choice]
+                if p_item[1] <= salary:
+                    shoplist.append(p_item)
+                    salary -= p_item[1]
+                    print("Adding %s into shopping catrt,your current balance is \033[31;1m%s\033[0m "%(p_item,salary))
+                else:
+                    print("\033[41;1m你的余额[%s],无法完成支付！\033[0m")
+            else:
+                print("你输入%s的不在打印列表！"%user_choice)
+                exit()
+        elif user_choice == 'q':
+            print("----->shopping list----")
+            for p in shoplist:
+                print(p)
+            print("你的余额是：",salary)
+            exit()
+        else:
+            print('invalid option')
