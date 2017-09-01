@@ -1,0 +1,60 @@
+#Author :jao
+'''name = ["jao",26]
+name1 = ["liming",34]
+name2=["xiaohui",56]
+database  = [name,name1,name2]
+print(database)
+name3=("admini")
+print(name3[3])
+
+mouths=[
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
+
+ending=['st','nd','rd']+17*['th'],['st','nd','rd']+7*['th']+['st']
+year=input('Year:')
+mouths=input('mouth(1-12):')
+day=input('day(1-31):')
+
+mouth_number=int(mouths)
+day_number=int(day)
+mouth_number = int(mouth_number)
+#mouth_name = mouths[mouth_number-1]
+#ordinal = day+ending[day_number-1]
+print('mouth_name'+'','ordinal','+"year')
+'''
+#name1=["admin"]
+#name2=2
+#print(name1*name2)
+
+
+'''x=['1','2','1']
+x[2]=4
+print(x)
+'''
+name = list('alice')
+print(name)
+del name[0]
+print(name)
+name[2]=list('ab')
+print(name)
+name[2:]=list('ab')
+print(name)
+
+name1 = [1,2,3]
+name1.reverse()  #倒序
+print(name1)
+
+name2 = [3,4,2,1,5,6,8,9,10]
+name2.sort()   #正排序
+print(name2)
