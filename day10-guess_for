@@ -1,0 +1,39 @@
+#Author :jao
+'''age_of_jao =23   #定义数字
+for i in range (3):    #for循环三次
+    guess_age = int(input("guess yourage:"))
+    if guess_age == age_of_jao:
+        print('yes，you guess right！')
+    elif guess_age > age_of_jao:
+        print('you guess bigger!')
+    else:
+        print('you guess smaller!')
+else:
+    print('you have tried too many times...exit')
+'''
+
+age_of_jao=23
+name_of_jao='daniel'
+for i in range(3):
+    age=int(input("your age:"))
+    name=input('you are name:')
+    if age==age_of_jao and name==name_of_jao:
+        print("你输入了正确的用户名和密码！")
+        break
+    elif age!=age_of_jao and name==name_of_jao:
+        print("你输入了错误的密码，输入了正确的用户名！")
+    elif age==age_of_jao and name!=name_of_jao:
+        print("你输入了正确的密码，输入了错误的用户名！")
+    else:
+        print("你输入了错误的用户名和密码")
+
+    
+
+
+
+
+
+
+
+
+
