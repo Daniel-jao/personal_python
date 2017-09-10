@@ -1,0 +1,59 @@
+#Author :jao
+#data=open('test',encoding='utf-8').read()
+
+f=open('test','w',encoding='utf-8') #文件内存对象 'w'创建文件
+f.write('hellow 1\n')
+f.write('hellow 2\n')
+print(f.flush())
+
+import sys,time
+for i in range(50):
+    sys.stdout.write('#')
+    sys.stdout.flush()
+    time.sleep(0.5)
+#data=f.read()
+
+'''print(f.tell())
+print(f.readline())
+print(f.readline())
+print(f.readline())
+print(f.tell())   #打印当前位置
+f.seek(10)      #回到当前位置
+print(f.encoding)
+print(f.fileno())
+print(f.flush())
+print(dir(f.buffer))
+
+#for line in f.readlines():
+  #  print(line.strip())  #strip去掉换行和空格
+  '''
+'''count = 0
+for line in f:
+    if count ==9:
+        print('e------==+++++++++')
+        count +=1
+        continue
+    print(line)
+    count +=1
+f.close()
+'''
+'''for index,line in enumerate(f.readlines()):
+    if index ==9:
+        print('------我是分割线-------')
+        continue
+    print(line.strip())
+#print(f.readlines())
+#data2=f.read()
+#for i in range(5):   #读取前五行
+#    print(f.readline()) #读其中的一行
+
+
+f.write('my name is jao')
+f.write('my name is jao')
+f.write('my name is jao,\n')
+f.write('my name is jao')
+#a=append 追加
+f.write('my name is jao。。。\n')
+f.write('my name is jao')
+f.close()
+'''
