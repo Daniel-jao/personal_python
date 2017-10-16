@@ -2,7 +2,7 @@
 name=['ding','tao','admin','sysadmin','liming','zhangshan','liumin']
 numbers=['123','345','567','789']
 print(numbers[name.index('tao')])   #找到tao在数字列表中的数字
-phonebook = {'dingtao':'18588997885','liming':'13565747890'}
+phonebook = {'dingtao':'1858343434334','liming':'13565747890'}
 print(phonebook)
 print(phonebook['dingtao'])
 print(phonebook['liming'])
