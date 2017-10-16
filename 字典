@@ -1,0 +1,43 @@
+#Author :jao
+name=['ding','tao','admin','sysadmin','liming','zhangshan','liumin']
+numbers=['123','345','567','789']
+print(numbers[name.index('tao')])   #找到tao在数字列表中的数字
+phonebook = {'dingtao':'18588997885','liming':'13565747890'}
+print(phonebook)
+print(phonebook['dingtao'])
+print(phonebook['liming'])
+
+
+items=[('name','gumy'),('age',42)]
+d=dict(items)
+print(d)
+print(d['name'])
+print(d['age'])
+
+people={
+    'Alice':{
+        'phone':'13888888888',
+        'addr': 'Foo dirve 23'
+    },
+    'Daniel':{
+        'phone':'1888888888',
+        'addr':'Bar street 42'
+    },
+    'chenming':{
+        'phone':'12345789990',
+        'addr':'Baz avenue 90'
+    }
+}
+lables ={
+    'phone':'phone nubmber',
+    'addr':'address'
+}
+name=input('Name:')
+request = input('phone number (p) or address (a)？')
+if request == 'p':key='phone'
+if request == 'a':key='addr'
+if name in people :
+    print("%s's %s is %s." % (name,lables[key],people[name][key]))
+
+Phonebook={'Beth':'9120','Alice':'2341','Cenci':'3258'}
+
