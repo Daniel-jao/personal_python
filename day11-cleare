@@ -1,0 +1,17 @@
+#Author :jao
+d={}
+d['name']='Daniel'
+d['age']='26'
+print(d)
+returnd_value =d.clear()   #清除当前字典
+print(d)
+print(returnd_value)
+
+x={}
+y=x
+x['key']='value'
+print(y)
+print(x.clear())
+
+######################################################################
+copy
